@@ -29,7 +29,6 @@ class PostRetrieveDestroy(generics.RetrieveDestroyAPIView):
             raise ValidationError('Isnt exists')
 
 
-
 class VoteCreate(generics.CreateAPIView, mixins.DestroyModelMixin):
     serializer_class = VoteSerializer
     permission_classes = [permissions.IsAuthenticated]
